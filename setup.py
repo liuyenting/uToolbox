@@ -14,7 +14,7 @@ setup(
     #   bumpversion release
     # to next version
     #   bump patch/minor/major
-    version="0.6.4",
+    version="0.6.5.dev0",
     # one-line description for the summary field
     description="Metapackage for uToolbox, a Python image processing package for LLSM.",
     long_description=long_description,
