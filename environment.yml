@@ -38,4 +38,4 @@ dependencies:
     - pip
     - pip: 
         - bump2version
-        - pytest-datafiles
+        
