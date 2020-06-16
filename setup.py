@@ -43,8 +43,8 @@ setup(
     # other packages the project depends on to run
     #   install_requires -> necessity
     #   requirements.txt
-    install_requires=["utoolbox-core"],
+    install_requires=["utoolbox-core>=0.0.19"],
     # additional groups of dependencies here for the "extras" syntax
-    extras_require={},
+    extras_require={"image": ["utoolbox-image"]},
     zip_safe=True,
 )
