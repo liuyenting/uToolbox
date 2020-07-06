@@ -7,6 +7,11 @@ cwd = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(cwd, "README.md"), encoding="utf-8") as fd:
     long_description = fd.read()
 
+extras_require = {"image": ["utoolbox-image"]}
+
+# add complete packages
+extras_require["complete"] = list(sum(extras_require.values(), []))
+
 setup(
     # published project name
     name="utoolbox",
@@ -43,8 +48,8 @@ setup(
     # other packages the project depends on to run
     #   install_requires -> necessity
     #   requirements.txt
-    install_requires=["utoolbox-core>=0.0.19"],
+    install_requires=["utoolbox-core>=0.0.21"],
     # additional groups of dependencies here for the "extras" syntax
-    extras_require={"image": ["utoolbox-image"]},
+    extras_require=extras_require,
     zip_safe=True,
 )
